@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap");
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.navbar-search {
+  position: relative;
+}
+.navbar-search-bar {
+  position: relative;
+  padding-left: 50px;
+  padding-right: 20px;
+  width: 360px;
+  height: 42px;
+  border: none;
+  background: #f2f2f2;
+  border-radius: 21px;
+  font-family: "IBM Plex Sans", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #5c5c5c;
+}
+
+.navbar-search-icon {
+  position: absolute;
+  left: 16.75px;
+  top: 12.75px;
+}
+
+/* ----------------------------- Header ----------------------------- */
+.header {
+  position: relative;
+  width: 100%;
+  height: 440px;
+  background-image: url("./img/header-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: brightness(50%);
+}
+
+.header-android-section {
+  position: absolute;
+  display: none;
+  top: 20px;
+  width: 100%;
+  padding: 0px 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-android-section button {
+  background-color: transparent;
+  height: 28px;
+  padding: 6px 8px;
+  border: 0.8px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+.header-text {
+  position: absolute;
+  color: #ffffff;
+  top: 286px;
+  left: 200px;
+}
+
+.header-text h1 {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 47px;
+}
+
+.header-text p {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+
+  color: #ffffff;
+}
+
+/* ----------------------------- Main Section ----------------------------- */
+.main-section {
+  margin-left: 200px;
+  margin-right: 200px;
+}
+.main-nav {
+  padding-top: 12px;
+  background-color: white;
+}
+
+.main-nav-android {
+  display: none;
+  padding: 12px 12px;
+  background-color: white;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-nav-android span {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  color: #212529;
+}
+.main-nav-android button {
+  width: 106px;
+  margin-right: 10px;
+}
+.main-nav-btn {
+  width: 133px;
+  height: 36px;
+  border: none;
+  border-radius: 4px;
+}
+.write-blog-btn {
+  background: #edeef0;
+  color: #000000;
+}
+.write-blog-btn a {
+  padding-right: 15px;
+  font-weight: 500;
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-size: 15px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.join-grp-btn {
+  display: flex;
+  align-items: center;
+  background: #2f6ce5;
+  color: #ffffff;
+}
+
+.main-nav .nav-link {
+  color: #8a8a8a;
+  padding: 8px 12px;
+}
+
+.main-nav .nav-link.active {
+  color: #000000;
+  position: relative;
+}
+.main-nav .nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: -13px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom: #000000 solid 1px;
+  width: 80%;
+}
+
+/* -------------  Max width 1200px ------------ */
+@media (max-width: 1200px) {
+  .main-section {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+
+/* -------------  Max width 996px ------------ */
+
+@media (max-width: 996px) {
+  .navbar {
+    display: none;
+  }
+  .header-android-section {
+    display: flex;
+  }
+  .header-text {
+    bottom: 34px;
+    left: 18px;
+  }
+  .main-nav {
+    display: none;
+  }
+  .main-nav-android {
+    display: flex;
+  }
+  .main-section {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .location-section {
+    display: none;
+  }
+  .modal-right {
+    display: none !important;
+  }
+}
+
+/* -------------  Max width 768px ------------ */
+@media (max-width: 768px) {
+  .main-section {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .header-text h1 {
+    font-size: 28px;
+  }
+}
+
+/* -------------  Max width 576px ------------ */
+@media (max-width: 576px) {
+  .main-section {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
