@@ -8,7 +8,7 @@ import locationIcon from "../img/location-icon.svg";
 import usericon from "../img/user-icon.png";
 
 const PostItem = (props) => {
-  const host = "http://localhost:5000";
+  const host = "https://atg-world-backend.herokuapp.com";
   const { allPost, setAllPost } = props;
 
   const deletePost = async (e) => {

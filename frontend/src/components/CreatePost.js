@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const CreatePost = (props) => {
-  const host = "http://localhost:5000";
+  const host = "https://atg-world-backend.herokuapp.com";
 
   const { allPost, setAllPost } = props;
 

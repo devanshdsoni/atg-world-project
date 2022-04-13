@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 import CreatePost from "./components/CreatePost";
 
 function App() {
-  const host = "http://localhost:5000";
+  const host = "https://atg-world-backend.herokuapp.com";
 
   // --> 'isLoggedIn' State usigng useState hook to check User is logged in or not
   const [isLoggedIn, setIsLoggedIn] = useState(localStorage.token ? true : false);

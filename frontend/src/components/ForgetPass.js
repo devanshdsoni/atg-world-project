@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import eyeIcon from "../img/eye-icon.svg";
 
 const ForgetPass = () => {
-  const host = "http://localhost:5000";
+  const host = "https://atg-world-backend.herokuapp.com";
 
   const [emailSent, setEmailSent] = useState(false);
   const [isOtpVerified, setOtpVerified] = useState(false);

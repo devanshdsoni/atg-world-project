@@ -7,7 +7,7 @@ import eyeIcon from "../img/eye-icon.svg";
 import ForgetPass from "./ForgetPass";
 
 const Login = (props) => {
-  const host = "http://localhost:5000";
+  const host = "https://atg-world-backend.herokuapp.com";
 
   const { setIsLoggedIn } = props;
 

@@ -44,7 +44,7 @@ router.get("/fetchallpost", async (req, res) => {
     const posts = await Post.find();
 
     // -- Sending response to user
-    res.json({ success: true, msg: "Post created successfully!", posts });
+    res.json({ success: true, msg: "Post fetched successfully!", posts });
   } catch (error) {
     return res.status(500).json({ success: false, msg: "Internal Server Error!", error });
   }
@@ -68,7 +68,7 @@ router.delete("/deletepost/:id", fetchuser, async (req, res) => {
 
     res.json({
       success: true,
-      msg: "Note deleted successfully!",
+      msg: "Post deleted successfully!",
       deletedNote,
     });
   } catch (error) {

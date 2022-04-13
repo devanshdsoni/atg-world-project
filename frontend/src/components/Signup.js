@@ -6,7 +6,7 @@ import googleIcon from "../img/google-icon.svg";
 import eyeIcon from "../img/eye-icon.svg";
 
 const Signup = (props) => {
-  const host = "http://localhost:5000";
+  const host = "https://atg-world-backend.herokuapp.com";
   const { setIsLoggedIn } = props;
 
   // Form Data variable using useState hook
